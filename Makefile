@@ -81,7 +81,9 @@ TARGETS += \
 # Temporarily disabled until mellanox builds with Linux 6.1
 # mellanox-ofed-pkg \
 
-NONFREE_TARGETS = nonfree-kmod-nvidia-pkg
+NONFREE_TARGETS = \
+	nonfree-kmod-nvidia-pkg \
+	nonfree-kmod-nvidia-grid-pkg
 
 all: $(TARGETS) ## Builds all known pkgs.
 
