@@ -8,16 +8,18 @@ build-and-push-grid:
     PUSH=true \
     nonfree-kmod-nvidia-grid-pkg
 
-build-and-push:
+build-and-push TAG='':
   docker buildx use local
 
   make \
+    TAG={{ TAG }} \
     PLATFORM=linux/amd64 \
     REGISTRY=ghcr.io \
     USERNAME=djeebus/talos \
     PUSH=true
 
   make \
+    TAG={{ TAG }} \
     PLATFORM=linux/amd64 \
     REGISTRY=ghcr.io \
     USERNAME=djeebus/talos \
