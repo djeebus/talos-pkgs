@@ -83,7 +83,10 @@ TARGETS += \
 
 NONFREE_TARGETS = \
 	nonfree-kmod-nvidia-pkg \
-	nonfree-kmod-nvidia-grid-pkg
+	nonfree-kmod-nvidia-grid-450-pkg \
+	nonfree-kmod-nvidia-grid-470-pkg \
+	nonfree-kmod-nvidia-grid-525-pkg \
+	nonfree-kmod-nvidia-grid-535-pkg
 
 all: $(TARGETS) ## Builds all known pkgs.
 
