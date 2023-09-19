@@ -15,7 +15,7 @@ steps:
         rm -f /dev/tty && ln -s /dev/stdout /dev/tty
         ln -s /toolchain/bin/echo /toolchain/bin/which
       
-        /toolchain/bin/bash /pkg/files/NVIDIA-Linux-x86_64-{{ .nvidia_driver_version }}-grid.run --extract-only
+        /toolchain/bin/bash /pkg/files/NVIDIA-Linux-x86_64-{{ .nvidia_grid_driver_version }}-grid.run --extract-only
     build:
       - |
         cd NVIDIA-Linux-*/kernel
