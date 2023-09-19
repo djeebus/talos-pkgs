@@ -136,11 +136,6 @@ vars:
   nvidia_driver_sha256: 49ed408fc8bad50990fcc094fe3808975edd81490ac3c36be17a987c7cea4ee7
   nvidia_driver_sha512: 23fbaaa671f6f4bd92147c1ec0099cd006efc73297211ffba74d78310c14364de726f84e388c397716c42c854a302948f5bcf9e9bac65ae41f54d34e814cfb60
 
-  nvidia_grid_450_driver_version: 450.248.02
-  nvidia_grid_470_driver_version: 470.199.02
-  nvidia_grid_525_driver_version: 525.105.17
-  nvidia_grid_535_driver_version: 535.54.03
-
   # renovate: datasource=git-tags extractVersion=^OpenSSL_(?<version>.*)$ versioning=loose depName=git://git.openssl.org/openssl.git
   openssl_version: 1_1_1v
   openssl_sha256: d6697e2871e77238460402e9362d47d18382b15ef9f246aba6c7bd780d38a6b0
